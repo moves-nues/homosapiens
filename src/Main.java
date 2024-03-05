@@ -59,6 +59,7 @@ public class Main {
             if (b != 0) {
                 System.out.print(a[b]);
                 System.out.print(", ");
+
             }
 
 
