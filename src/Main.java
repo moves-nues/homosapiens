@@ -1,3 +1,6 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         //Задачи 1, 2
@@ -28,22 +31,21 @@ public class Main {
 
 
 //Задача 3
-        int[] weight2 = {3, 2, 1};
-        double[] number2 = {9.986, 7.654, 1.57};
-        for (int i = 0; i < weight.length; i = i + 1) {
-            if (i == 2) {
-                System.out.println(weight2[i]);
+        for (int i = 2; i >= 0; i = i - 1) {
+            if (i == 0) {
+                System.out.println(weight[i]);
                 break;
             }
-            System.out.print(weight2[i] + ", ");
+            System.out.print(weight[i] + ", ");
         }
-        for (int i = 0; i < number.length; i = i + 1) {
-            if (i == 2) {
-                System.out.println(number2[i]);
+        for (int i = 2; i >= 0; i = i - 1) {
+            if (i == 0) {
+                System.out.println(number[i]);
                 break;
             }
-            System.out.print(number2[i] + ", ");
+            System.out.print(number[i] + ", ");
         }
+
 
 
 //Задача 4
@@ -51,18 +53,17 @@ public class Main {
         for (int b = 0; b < a.length; b = b + 1) {
             if (a[b] % 2 != 0) {
                 a[b] = a[b] + 1;
-            }
-            if (b == 2) {
-                System.out.println(a[b]);
-                break;
-            }
-            if (b != 0) {
-                System.out.print(a[b]);
-                System.out.print(", ");
+                System.out.print(a[b]); }
+            System.out.print(Arrays.toString(a));
+                }
 
-            }
+
+
+
+
+
+
 
 
         }
     }
-}
